@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&family=Pangolin&family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: antiquewhite;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    background-color: aliceblue;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    background-color: aquamarine;
+    height: 70px;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.brand img{
+    width: 5vw;
+    padding: 12px;
+}
+
+.container{
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    font-family: 'Pangolin', cursive;    
+    display: flex;
+    margin: 23px auto;
+    width: 85vw;
+    border-radius: 8px;
+    padding: 34px;
+    background-image: url('./img/bg.jpg');
+    background-size: 100% 100%;
+}
+
+
+.songItemContainer{
+    margin-top: 40px;
+}
+
+.songItem{
+    height: 8vh;
+    display: flex;
+    background-color: white;
+    color: black;
+    width: 40vw;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 9px;
+}
+
+.songItem img{
+    width: 3vw;
+    margin: 0 23px;
+    border-radius: 10px;
+}
+
+.timeStamp{
+    margin: 0 23px;
+}
+
+.timeStamp i{
+    cursor: pointer;
+}
+
+.bottom{
+    position: sticky;
+    height: 110px;
+    background-color:#101018;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons{
+    margin-top: 34px; 
+    color: white;
+}
+
+.icons i{
+    cursor: pointer;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+
+
+#myProgressBar{
+    width: 60vw;
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 1vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+    width: 8vw;
+    border-radius: 6px;
+}
